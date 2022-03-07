@@ -4,14 +4,9 @@ import iniconfig
 from matplotlib import container
 import streamlit as st
 st.image("WAPP.png")
-st.subheader("Labapp")
-st.markdown("Elige el laboratorio que quieres analizar")
 sol1,sol2,sol3=st.columns(3)
-seleccion=st.selectbox("Laboratorios",['Biometría hemática','Química sanguinea','Hormonas tiroideas'])
-inicio=st.button("Iniciamos")
-
-if seleccion=="Biometría hemática" and inicio==True:
-    @st.cache(persist=True)
-    Leu=st.slider("Leucocitos cel/mm3",1,700000)
+seleccion=st.selectbox("Laboratorios, elige el laboratorio que quieres analizar",['Selecciona','Glucosa','Urea','Creatinina','Trigliceridos','Colesterol total'])
+if seleccion=="Selecciona":
+    st.image('Lab.png',None,250)
 
 
