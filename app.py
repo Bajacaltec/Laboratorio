@@ -11,8 +11,7 @@ seleccion=st.selectbox("Laboratorios",['Biometría hemática','Química sanguine
 inicio=st.button("Iniciamos")
 
 if seleccion=="Biometría hemática" and inicio==True:
-    st.cache(persist=True)
-    c=st.container()
-    Leu=c.slider("Leucocitos cel/mm3",1,700000)
+    @st.cache(persist=True)
+    Leu=st.slider("Leucocitos cel/mm3",1,700000)
 
 
