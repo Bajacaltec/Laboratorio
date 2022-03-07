@@ -1,7 +1,3 @@
-from email.utils import collapse_rfc2231_value
-from operator import truth
-import iniconfig
-from matplotlib import container
 import streamlit as st
 st.image("WAPP.png")
 sol1,sol2,sol3=st.columns(3)
